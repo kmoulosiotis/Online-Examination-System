@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="images/logo.png" type="image/logo" sizes="18x18">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="_css/styles.css">
+    </head>
+    <body>
+        <div class="main">
+        <header>
+            <a href="index.jsp"><img src="images/logo.png" width="80" height="80" alt="OES"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><button class = "btn" onclick="openMenu()">Login</button></li>
+                    <li><button class = "btn"><a href="register.jsp">Sign up</a></button></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <div class="container">
+		<h1 class="email-title">Send us an e-mail</h1>
+		<div class="form-style">
+			<form id="contact-form" method="post" action="contact-form-handler.php">
+				<input class="form-control" name="name" type="text" placeholder="Your name" required><br>
+				<input class="form-control"  name="email" type="email" placeholder="Your email" required><br>
+				<input class="form-control"  name="subject" type="text" placeholder="Subject" required><br>
+				<textarea class="form-control"  name="message"  placeholder="Type your message" rows="5" required></textarea><br>
+				<input class="form-control submit"  type="submit" value="Send message">
+			</form>
+		</div>
+	</div>
+    </body>
+</html>
